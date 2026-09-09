@@ -50,7 +50,7 @@ export default function Home() {
               style={{ border: '1px solid rgba(201,168,76,0.4)' }}>
               <span className="w-1.5 h-1.5 rounded-full animate-pulse-gold" style={{ background: '#C9A84C' }} />
               <span className="text-xs font-medium tracking-widest uppercase" style={{ color: '#C9A84C' }}>
-                RC: 3432957 · Incorporated 2021
+                RC: 3432957 · Incorporated 2023
               </span>
             </div>
 
