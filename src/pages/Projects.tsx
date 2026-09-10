@@ -65,10 +65,12 @@ export default function Projects() {
               {/* Image */}
               <div className={`relative ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
                 <img src={image} alt={title} className="rounded-sm object-cover w-full h-[440px]" />
+                <div className="absolute inset-0 rounded-sm"
+                  style={{ background: 'linear-gradient(to top, rgba(255,255,255,0.7), transparent)' }} />
                 <div className="absolute top-4 left-4 font-display text-8xl font-bold"
                   style={{ color: 'rgba(148,66,200,0.15)' }}>{num}</div>
                 <div className="absolute bottom-4 left-4 px-3 py-1 rounded-sm"
-                  style={{ background: '#9442C8' }}>
+                  style={{ background: '#C9A84C' }}>
                   <span className="text-xs font-bold uppercase tracking-wide" style={{ color: '#FFFFFF' }}>{status}</span>
                 </div>
               </div>
@@ -81,20 +83,20 @@ export default function Projects() {
                     Project {num}
                   </span>
                 </div>
-                <h2 className="font-display text-3xl lg:text-4xl font-bold text-[#2D2438] mb-3">{title}</h2>
-                <div className="text-[#7C6A86] text-xs tracking-wider uppercase mb-6">{category}</div>
-                <p className="text-[#6B5B75] leading-relaxed mb-8">{desc}</p>
+                <h2 className="font-display text-3xl lg:text-4xl font-bold text-slate-900 mb-3">{title}</h2>
+                <div className="text-slate-500 text-xs tracking-wider uppercase mb-6">{category}</div>
+                <p className="text-slate-600 leading-relaxed mb-8">{desc}</p>
 
                 <div className="p-6 mb-8 rounded-sm"
-                  style={{ background: '#FAF5FF', border: '1px solid rgba(15,23,42,0.10)' }}>
-                  <div className="text-xs font-medium tracking-wider uppercase mb-4" style={{ color: '#9442C8' }}>
+                  style={{ background: '#F8FAFC', border: '1px solid rgba(15,23,42,0.10)' }}>
+                  <div className="text-xs font-medium tracking-wider uppercase mb-4" style={{ color: '#C9A84C' }}>
                     Key Outcomes
                   </div>
                   <ul className="space-y-3">
                     {outcomes.map((o) => (
                       <li key={o} className="flex items-start gap-3">
-                        <span className="text-lg leading-none mt-0.5 shrink-0" style={{ color: '#9442C8' }}>›</span>
-                        <span className="text-[#5B4A66] text-sm">{o}</span>
+                        <span className="text-lg leading-none mt-0.5 shrink-0" style={{ color: '#C9A84C' }}>›</span>
+                        <span className="text-slate-700 text-sm">{o}</span>
                       </li>
                     ))}
                   </ul>
@@ -115,21 +117,21 @@ export default function Projects() {
       <section className="py-20 section-divider" style={{ background: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="p-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 rounded-sm"
-            style={{ background: '#FAF5FF', border: '1px solid rgba(148,66,200,0.2)' }}>
+            style={{ background: '#F8FAFC', border: '1px solid rgba(201,168,76,0.2)' }}>
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
                 <span className="w-2 h-2 rounded-full animate-pulse-gold" style={{ background: '#9442C8' }} />
                 <span className="text-xs font-medium tracking-widest uppercase" style={{ color: '#9442C8' }}>Upcoming</span>
               </div>
-              <h3 className="font-display text-2xl font-bold text-[#2D2438] mb-2">Inauguration of Projects</h3>
-              <p className="text-[#6B5B75] text-sm max-w-xl">
+              <h3 className="font-display text-2xl font-bold text-slate-900 mb-2">Inauguration of Projects</h3>
+              <p className="text-slate-600 text-sm max-w-xl">
                 Join us for the official inauguration of our flagship projects — a milestone event celebrating
                 African 4IR progress and the real-world impact of our initiatives.
               </p>
             </div>
             <Link to="/events"
               className="shrink-0 inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm rounded-sm transition-colors"
-              style={{ background: '#9442C8', color: '#FFFFFF' }}>
+              style={{ background: '#C9A84C', color: '#0F172A' }}>
               View Events <ArrowRight size={16} />
             </Link>
           </div>

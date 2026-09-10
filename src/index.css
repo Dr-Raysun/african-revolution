@@ -4,10 +4,10 @@
 @theme {
   /* Colors */
   --color-navy:        #FFFFFF;
-  --color-navy-light:  #FAF5FF;
-  --color-navy-mid:    #F3E8FF;
+  --color-navy-light:  #F8FAFC;
+  --color-navy-mid:    #F1F5F9;
   --color-navy-deep:   #FFFFFF;
-  --color-navy-card:   #FAF5FF;
+  --color-navy-card:   #F8FAFC;
 
   --color-gold:        #9442C8;
   --color-gold-light:  #B76AE6;
@@ -29,7 +29,7 @@
   }
   body {
     background-color: var(--color-navy);
-    color: #2D2438;
+    color: #0F172A;
     font-family: var(--font-body);
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
@@ -77,7 +77,7 @@
   }
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 38px rgba(77, 29, 112, 0.12), 0 0 0 1px rgba(148,66,200,0.18);
+    box-shadow: 0 20px 40px rgba(15,23,42,0.12), 0 0 0 1px rgba(201,168,76,0.2);
   }
 
   .link-hover {
