@@ -3,11 +3,11 @@
 /* ── Design tokens (Tailwind v4 @theme) ── */
 @theme {
   /* Colors */
-  --color-navy:        #0A1628;
-  --color-navy-light:  #132040;
-  --color-navy-mid:    #1E3A5F;
-  --color-navy-deep:   #060E1C;
-  --color-navy-card:   #0D1F38;
+  --color-navy:        #FFFFFF;
+  --color-navy-light:  #F8FAFC;
+  --color-navy-mid:    #F1F5F9;
+  --color-navy-deep:   #FFFFFF;
+  --color-navy-card:   #F8FAFC;
 
   --color-gold:        #C9A84C;
   --color-gold-light:  #E8C96B;
@@ -26,7 +26,7 @@
   }
   body {
     background-color: var(--color-navy);
-    color: #fff;
+    color: #0F172A;
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -59,7 +59,7 @@
   }
 
   .bg-navy-glass {
-    background: rgba(10, 22, 40, 0.85);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -73,7 +73,7 @@
   }
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.2);
+    box-shadow: 0 20px 40px rgba(15,23,42,0.12), 0 0 0 1px rgba(201,168,76,0.2);
   }
 
   .link-hover {
