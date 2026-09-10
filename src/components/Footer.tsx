@@ -9,22 +9,22 @@ const sectors = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#060E1C', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+    <footer style={{ background: '#FFFFFF', borderTop: '1px solid rgba(15,23,42,0.12)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-full flex items-center justify-center"
-              style={{ border: '2px solid #C9A84C', background: '#132040' }}>
+              style={{ border: '2px solid #C9A84C', background: '#F8FAFC' }}>
               <span className="text-[10px] font-bold" style={{ color: '#C9A84C' }}>A4IR</span>
             </div>
             <div>
-              <div className="font-display text-white font-bold text-lg leading-tight">A4IR</div>
+              <div className="font-display text-slate-900 font-bold text-lg leading-tight">A4IR</div>
               <div className="text-[10px] tracking-widest uppercase" style={{ color: '#C9A84C' }}>African 4IR</div>
             </div>
           </div>
-          <p className="text-gray-400 text-sm leading-relaxed mb-4">
+          <p className="text-slate-600 text-sm leading-relaxed mb-4">
             Championing African 4th Industrial Revolution. RC: 3432957 · Incorporated 2021.
           </p>
           <a href="https://www.african4ir.com" target="_blank" rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Navigation */}
         <div>
-          <h4 className="text-white font-semibold text-sm tracking-wider uppercase mb-6">Navigation</h4>
+          <h4 className="text-slate-900 font-semibold text-sm tracking-wider uppercase mb-6">Navigation</h4>
           <ul className="space-y-3">
             {[
               { to: '/', label: 'Home' },
@@ -48,7 +48,7 @@ export default function Footer() {
               { to: '/contact', label: 'Contact Us' },
             ].map(({ to, label }) => (
               <li key={to}>
-                <Link to={to} className="text-gray-400 text-sm hover:text-[#C9A84C] transition-colors">
+                <Link to={to} className="text-slate-600 text-sm hover:text-[#C9A84C] transition-colors">
                   {label}
                 </Link>
               </li>
@@ -58,11 +58,11 @@ export default function Footer() {
 
         {/* Sectors */}
         <div>
-          <h4 className="text-white font-semibold text-sm tracking-wider uppercase mb-6">Our Sectors</h4>
+          <h4 className="text-slate-900 font-semibold text-sm tracking-wider uppercase mb-6">Our Sectors</h4>
           <ul className="space-y-3">
             {sectors.map((s) => (
               <li key={s}>
-                <Link to="/sectors" className="text-gray-400 text-sm hover:text-[#C9A84C] transition-colors">
+                <Link to="/sectors" className="text-slate-600 text-sm hover:text-[#C9A84C] transition-colors">
                   {s}
                 </Link>
               </li>
@@ -72,24 +72,24 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="text-white font-semibold text-sm tracking-wider uppercase mb-6">Contact</h4>
+          <h4 className="text-slate-900 font-semibold text-sm tracking-wider uppercase mb-6">Contact</h4>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <Mail size={14} className="mt-0.5 shrink-0" style={{ color: '#C9A84C' }} />
-              <a href="mailto:info@african4ir.com" className="text-gray-400 text-sm hover:text-[#C9A84C] transition-colors">
+              <a href="mailto:info@african4ir.com" className="text-slate-600 text-sm hover:text-[#C9A84C] transition-colors">
                 info@african4ir.com
               </a>
             </li>
             <li className="flex items-start gap-3">
               <Phone size={14} className="mt-0.5 shrink-0" style={{ color: '#C9A84C' }} />
-              <div className="text-gray-400 text-sm space-y-1">
+              <div className="text-slate-600 text-sm space-y-1">
                 <div>+234-806-700-7462</div>
                 <div>+234-080-5292-0626</div>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={14} className="mt-0.5 shrink-0" style={{ color: '#C9A84C' }} />
-              <p className="text-gray-400 text-sm">
+              <p className="text-slate-600 text-sm">
                 1A, Block D, Alhaji Adebayo Layout,<br />
                 Apete, Ibadan, Oyo State, Nigeria.
               </p>
@@ -99,12 +99,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }} className="py-6">
+      <div style={{ borderTop: '1px solid rgba(15,23,42,0.10)' }} className="py-6">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs">
+          <p className="text-slate-500 text-xs">
             © {new Date().getFullYear()} A4IR — African 4th Industrial Revolution. All rights reserved.
           </p>
-          <p className="text-gray-600 text-xs">RC: 3432957 · Incorporated 2021</p>
+          <p className="text-slate-500 text-xs">RC: 3432957 · Incorporated 2021</p>
         </div>
       </div>
     </footer>
