@@ -119,14 +119,14 @@ export default function Home() {
                 className="text-xs font-medium tracking-widest uppercase"
                 style={{ color: "#C9A84C" }}
               >
-                RC: 3432957 · Incorporated 2025
+                RC: 3432957 · Incorporated 2024
               </span>
             </div>
 
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6 animate-fadeInUp">
               Championing Africa's{" "}
               <span className="text-gold-gradient">4th Industrial</span>{" "}
-              Revolution Home update
+              Revolution Home Feacture update
             </h1>
 
             <p className="text-gray-300 text-xl leading-relaxed mb-10 animate-fadeInUp">
@@ -151,7 +151,8 @@ export default function Home() {
                   color: "#fff",
                 }}
               >
-                View Projects <ChevronRight size={16} />
+                View Projects Now
+                <ChevronRight size={16} />
               </Link>
             </div>
           </div>
