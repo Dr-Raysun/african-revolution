@@ -13,7 +13,7 @@ const events = [
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
     badge: 'Flagship Event',
     badgeBg: '#C9A84C',
-    badgeColor: '#0A1628',
+    badgeColor: '#FFFFFF',
   },
   {
     num: '02',
@@ -80,16 +80,12 @@ export default function Events() {
           {events.map(({ num, title, icon: Icon, type, desc, highlights, image, badge, badgeBg, badgeColor }) => (
             <div key={num}
               className="grid lg:grid-cols-5 overflow-hidden rounded-sm group card-hover"
-              style={{ background: '#0D1F38', border: '1px solid rgba(255,255,255,0.05)' }}>
+              style={{ background: '#F8FAFC', border: '1px solid rgba(15,23,42,0.10)' }}>
 
               {/* Image */}
               <div className="lg:col-span-2 relative h-64 lg:h-auto overflow-hidden">
                 <img src={image} alt={title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-0 hidden lg:block"
-                  style={{ background: 'linear-gradient(90deg, transparent, rgba(13,31,56,0.5))' }} />
-                <div className="absolute inset-0 lg:hidden"
-                  style={{ background: 'linear-gradient(to top, rgba(13,31,56,0.6), transparent)' }} />
                 <div className="absolute top-4 left-4 font-display text-6xl font-bold"
                   style={{ color: 'rgba(201,168,76,0.2)' }}>{num}</div>
               </div>
@@ -99,17 +95,17 @@ export default function Events() {
                 <div className="flex flex-wrap items-center gap-3 mb-5">
                   <span className="px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-wide"
                     style={{ background: badgeBg, color: badgeColor }}>{badge}</span>
-                  <div className="flex items-center gap-1.5 text-gray-500 text-xs">
+                  <div className="flex items-center gap-1.5 text-slate-500 text-xs">
                     <Icon size={12} /><span>{type}</span>
                   </div>
                 </div>
-                <h3 className="font-display text-2xl font-bold text-white mb-4 group-hover:text-[#C9A84C] transition-colors">{title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">{desc}</p>
+                <h3 className="font-display text-2xl font-bold text-slate-900 mb-4 group-hover:text-[#C9A84C] transition-colors">{title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">{desc}</p>
                 <div className="grid sm:grid-cols-2 gap-2 mb-6">
                   {highlights.map((h) => (
                     <div key={h} className="flex items-start gap-2">
                       <span className="shrink-0 mt-0.5" style={{ color: '#C9A84C' }}>›</span>
-                      <span className="text-gray-300 text-xs">{h}</span>
+                      <span className="text-slate-700 text-xs">{h}</span>
                     </div>
                   ))}
                 </div>
@@ -124,15 +120,15 @@ export default function Events() {
         </div>
       </section>
 
-      <section className="py-20 section-divider" style={{ background: '#060E1C' }}>
+      <section className="py-20 section-divider" style={{ background: '#FFFFFF' }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl font-bold text-white mb-5">Want to Attend or Partner for an Event?</h2>
-          <p className="text-gray-400 mb-8">
+          <h2 className="font-display text-4xl font-bold text-slate-900 mb-5">Want to Attend or Partner for an Event?</h2>
+          <p className="text-slate-600 mb-8">
             Reach out to us for event registrations, sponsorship opportunities, or speaking engagements.
           </p>
           <Link to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 font-bold rounded-sm transition-colors"
-            style={{ background: '#C9A84C', color: '#0A1628' }}>
+            style={{ background: '#C9A84C', color: '#0F172A' }}>
             Contact Us <ArrowRight size={16} />
           </Link>
         </div>

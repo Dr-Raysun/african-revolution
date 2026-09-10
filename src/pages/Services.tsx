@@ -64,7 +64,7 @@ export default function Services() {
         <section
           key={title}
           className="py-24 section-divider"
-          style={{ background: i % 2 === 0 ? '#0A1628' : '#060E1C' }}
+          style={{ background: i % 2 === 0 ? '#FFFFFF' : '#FFFFFF' }}
         >
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -76,32 +76,30 @@ export default function Services() {
                   </div>
                   <span className="text-xs font-medium tracking-widest uppercase" style={{ color: '#C9A84C' }}>{title}</span>
                 </div>
-                <h2 className="font-display text-4xl font-bold text-white mb-3">{tagline}</h2>
-                <p className="text-gray-400 leading-relaxed mb-8">{desc}</p>
+                <h2 className="font-display text-4xl font-bold text-slate-900 mb-3">{tagline}</h2>
+                <p className="text-slate-600 leading-relaxed mb-8">{desc}</p>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">
                   {offerings.map((o) => (
                     <div key={o} className="flex items-start gap-2">
                       <span className="shrink-0" style={{ color: '#C9A84C' }}>›</span>
-                      <span className="text-gray-300 text-sm">{o}</span>
+                      <span className="text-slate-700 text-sm">{o}</span>
                     </div>
                   ))}
                 </div>
 
                 <Link to="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm rounded-sm transition-colors"
-                  style={{ background: '#C9A84C', color: '#0A1628' }}>
+                  style={{ background: '#C9A84C', color: '#0F172A' }}>
                   Enquire Now <ArrowRight size={16} />
                 </Link>
               </div>
 
               <div className={`relative ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
                 <img src={image} alt={title} className="rounded-sm object-cover w-full h-[420px]" />
-                <div className="absolute inset-0 rounded-sm"
-                  style={{ background: 'linear-gradient(to top, rgba(10,22,40,0.6), transparent)' }} />
                 <div className="absolute bottom-6 left-6 px-4 py-2 rounded-sm"
                   style={{ background: '#C9A84C' }}>
-                  <span className="font-bold text-sm" style={{ color: '#0A1628' }}>{title}</span>
+                  <span className="font-bold text-sm" style={{ color: '#FFFFFF' }}>{title}</span>
                 </div>
               </div>
             </div>
@@ -109,15 +107,15 @@ export default function Services() {
         </section>
       ))}
 
-      <section className="py-20 section-divider" style={{ background: '#0A1628' }}>
+      <section className="py-20 section-divider" style={{ background: '#FFFFFF' }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl font-bold text-white mb-6">Which Service is Right for You?</h2>
-          <p className="text-gray-400 mb-8">
+          <h2 className="font-display text-4xl font-bold text-slate-900 mb-6">Which Service is Right for You?</h2>
+          <p className="text-slate-600 mb-8">
             Let us have a conversation about your goals and how A4IR can help you achieve them.
           </p>
           <Link to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 font-bold rounded-sm transition-colors"
-            style={{ background: '#C9A84C', color: '#0A1628' }}>
+            style={{ background: '#C9A84C', color: '#0F172A' }}>
             Contact Our Team <ArrowRight size={16} />
           </Link>
         </div>
