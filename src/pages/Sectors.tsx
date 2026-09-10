@@ -83,18 +83,18 @@ export default function Sectors() {
             {sectors.map(({ id, name, image, desc, subsectors, highlights }) => (
               <div key={id}
                 className="group rounded-sm overflow-hidden card-hover"
-                style={{ background: '#0D1F38', border: '1px solid rgba(255,255,255,0.05)' }}>
+                style={{ background: '#F8FAFC', border: '1px solid rgba(15,23,42,0.10)' }}>
                 <div className="relative h-52 overflow-hidden">
                   <img src={image} alt={name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0"
-                    style={{ background: 'linear-gradient(to top, #0D1F38, transparent)' }} />
+                    style={{ background: 'linear-gradient(to top, #F8FAFC, transparent)' }} />
                   <div className="absolute bottom-4 left-4">
-                    <h3 className="font-display text-xl font-bold text-white">{name}</h3>
+                    <h3 className="font-display text-xl font-bold text-slate-900">{name}</h3>
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-400 text-sm leading-relaxed mb-5">{desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-5">{desc}</p>
 
                   <div className="mb-5">
                     <div className="text-xs font-medium tracking-wider uppercase mb-3" style={{ color: '#C9A84C' }}>
@@ -112,10 +112,10 @@ export default function Sectors() {
                   </div>
 
                   <div>
-                    <div className="text-gray-500 text-xs font-medium tracking-wider uppercase mb-3">Key Offerings</div>
+                    <div className="text-slate-500 text-xs font-medium tracking-wider uppercase mb-3">Key Offerings</div>
                     <ul className="space-y-1.5">
                       {highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2 text-gray-300 text-sm">
+                        <li key={h} className="flex items-start gap-2 text-slate-700 text-sm">
                           <span className="shrink-0 mt-px" style={{ color: '#C9A84C' }}>›</span>
                           {h}
                         </li>

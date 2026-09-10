@@ -93,7 +93,7 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg,rgba(10,22,40,0.96) 0%,rgba(10,22,40,0.84) 55%,rgba(10,22,40,0.38) 100%)",
+              "linear-gradient(90deg,rgba(255,255,255,0.96) 0%,rgba(255,255,255,0.84) 55%,rgba(255,255,255,0.38) 100%)",
           }}
         />
         {/* Gold accent line */}
@@ -123,13 +123,13 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6 animate-fadeInUp">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.05] mb-6 animate-fadeInUp">
               Championing Africa's{" "}
               <span className="text-gold-gradient">4th Industrial</span>{" "}
               Revolution update
             </h1>
 
-            <p className="text-gray-300 text-xl leading-relaxed mb-10 animate-fadeInUp">
+            <p className="text-slate-700 text-xl leading-relaxed mb-10 animate-fadeInUp">
               A4IR bridges African communities and institutions with the
               transformative power of artificial intelligence, IoT, and emerging
               technologies — building a continent-wide digital future.
@@ -139,7 +139,7 @@ export default function Home() {
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 px-7 py-3.5 font-semibold text-sm rounded-sm transition-colors"
-                style={{ background: "#C9A84C", color: "#0A1628" }}
+                style={{ background: "#C9A84C", color: "#0F172A" }}
               >
                 Discover A4IR <ArrowRight size={16} />
               </Link>
@@ -147,8 +147,8 @@ export default function Home() {
                 to="/projects"
                 className="inline-flex items-center gap-2 px-7 py-3.5 font-semibold text-sm rounded-sm transition-colors hover:text-[#C9A84C]"
                 style={{
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  color: "#fff",
+                  border: "1px solid rgba(15,23,42,0.20)",
+                  color: "#0F172A",
                 }}
               >
                 View Projects
@@ -160,7 +160,7 @@ export default function Home() {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
-          <span className="text-xs text-gray-400 tracking-widest uppercase">
+          <span className="text-xs text-slate-600 tracking-widest uppercase">
             Scroll
           </span>
           <div
@@ -175,7 +175,7 @@ export default function Home() {
       {/* ── Stats ── */}
       <section
         style={{
-          background: "#0D1F38",
+          background: "#F8FAFC",
           borderTop: "1px solid rgba(201,168,76,0.15)",
         }}
       >
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="font-display text-4xl lg:text-5xl font-bold text-gold-gradient mb-1">
                 {value}
               </div>
-              <div className="text-gray-400 text-sm tracking-wider uppercase">
+              <div className="text-slate-600 text-sm tracking-wider uppercase">
                 {label}
               </div>
             </div>
@@ -207,16 +207,16 @@ export default function Home() {
                   Who We Are
                 </span>
               </div>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Africa's 4IR Catalyst
               </h2>
-              <p className="text-gray-400 text-lg leading-relaxed mb-6">
+              <p className="text-slate-600 text-lg leading-relaxed mb-6">
                 A4IR is a registered Nigerian company (RC: 3432957) dedicated to
                 championing the African 4th Industrial Revolution. Since 2021,
                 we have been building bridges between communities, governments,
                 and industries through technology-driven solutions.
               </p>
-              <p className="text-gray-400 leading-relaxed mb-8">
+              <p className="text-slate-600 leading-relaxed mb-8">
                 We operate across eight critical sectors — from Agriculture and
                 Health to Security and Governance — delivering training,
                 research, and consultancy that positions Africa at the forefront
@@ -243,13 +243,13 @@ export default function Home() {
               >
                 <div
                   className="font-display text-4xl font-bold"
-                  style={{ color: "#0A1628" }}
+                  style={{ color: "#FFFFFF" }}
                 >
                   4IR
                 </div>
                 <div
                   className="text-xs font-medium tracking-wider uppercase mt-1"
-                  style={{ color: "rgba(10,22,40,0.7)" }}
+                  style={{ color: "rgba(255,255,255,0.7)" }}
                 >
                   For Africa
                 </div>
@@ -266,7 +266,7 @@ export default function Home() {
       {/* ── Services ── */}
       <section
         className="py-24 section-divider"
-        style={{ background: "#0A1628" }}
+        style={{ background: "#FFFFFF" }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -280,10 +280,10 @@ export default function Home() {
               </span>
               <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
             </div>
-            <h2 className="font-display text-4xl font-bold text-white mb-4">
+            <h2 className="font-display text-4xl font-bold text-slate-900 mb-4">
               Our Core Services
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Three pillars of transformation — equipping Africa's people,
               institutions, and industries for the 4th Industrial Revolution.
             </p>
@@ -295,15 +295,15 @@ export default function Home() {
                 key={title}
                 className="p-8 rounded-sm card-hover group"
                 style={{
-                  background: "#0A1628",
-                  border: "1px solid rgba(255,255,255,0.06)",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(15,23,42,0.10)",
                 }}
               >
                 <div className="text-4xl mb-6">{icon}</div>
-                <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#C9A84C] transition-colors">
+                <h3 className="font-display text-xl font-bold text-slate-900 mb-3 group-hover:text-[#C9A84C] transition-colors">
                   {title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
                   {desc}
                 </p>
                 <Link
@@ -333,7 +333,7 @@ export default function Home() {
                   Coverage
                 </span>
               </div>
-              <h2 className="font-display text-4xl font-bold text-white">
+              <h2 className="font-display text-4xl font-bold text-slate-900">
                 Eight Sectors
               </h2>
             </div>
@@ -353,8 +353,8 @@ export default function Home() {
                 key={label}
                 className="p-6 rounded-sm card-hover group"
                 style={{
-                  background: "#0D1F38",
-                  border: "1px solid rgba(255,255,255,0.05)",
+                  background: "#F8FAFC",
+                  border: "1px solid rgba(15,23,42,0.10)",
                 }}
               >
                 <div
@@ -363,10 +363,10 @@ export default function Home() {
                 >
                   <Icon size={20} style={{ color: "#C9A84C" }} />
                 </div>
-                <h3 className="text-white font-semibold mb-1 group-hover:text-[#C9A84C] transition-colors">
+                <h3 className="text-slate-900 font-semibold mb-1 group-hover:text-[#C9A84C] transition-colors">
                   A4IR {label}
                 </h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{desc}</p>
+                <p className="text-slate-500 text-xs leading-relaxed">{desc}</p>
               </Link>
             ))}
           </div>
@@ -376,7 +376,7 @@ export default function Home() {
       {/* ── Projects ── */}
       <section
         className="py-24 section-divider"
-        style={{ background: "#060E1C" }}
+        style={{ background: "#FFFFFF" }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -390,7 +390,7 @@ export default function Home() {
                   Flagship Initiatives
                 </span>
               </div>
-              <h2 className="font-display text-4xl font-bold text-white">
+              <h2 className="font-display text-4xl font-bold text-slate-900">
                 Our Projects
               </h2>
             </div>
@@ -409,8 +409,8 @@ export default function Home() {
                 key={num}
                 className="group overflow-hidden rounded-sm card-hover"
                 style={{
-                  background: "#0A1628",
-                  border: "1px solid rgba(255,255,255,0.05)",
+                  background: "#FFFFFF",
+                  border: "1px solid rgba(15,23,42,0.10)",
                 }}
               >
                 <div className="relative h-52 overflow-hidden">
@@ -423,7 +423,7 @@ export default function Home() {
                     className="absolute inset-0"
                     style={{
                       background:
-                        "linear-gradient(to top, #0A1628, transparent)",
+                        "linear-gradient(to top, #FFFFFF, transparent)",
                     }}
                   />
                   <div
@@ -434,10 +434,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-lg font-bold text-white mb-3 group-hover:text-[#C9A84C] transition-colors">
+                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3 group-hover:text-[#C9A84C] transition-colors">
                     {title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     {desc}
                   </p>
                 </div>
@@ -458,7 +458,7 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(10,22,40,0.90)" }}
+          style={{ background: "rgba(255,255,255,0.90)" }}
         />
         <div
           className="absolute inset-0"
@@ -468,11 +468,11 @@ export default function Home() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
             Ready to Shape Africa's <br />
             <span className="text-gold-gradient">Digital Future?</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
+          <p className="text-slate-700 text-lg max-w-2xl mx-auto mb-10">
             Partner with A4IR and become part of a continent-wide movement
             driving innovation, inclusion, and impact through the 4th Industrial
             Revolution.
@@ -481,7 +481,7 @@ export default function Home() {
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 font-bold rounded-sm transition-colors"
-              style={{ background: "#C9A84C", color: "#0A1628" }}
+              style={{ background: "#C9A84C", color: "#0F172A" }}
             >
               Contact Us <ArrowRight size={16} />
             </Link>
@@ -489,8 +489,8 @@ export default function Home() {
               to="/events"
               className="inline-flex items-center gap-2 px-8 py-4 font-semibold rounded-sm transition-colors hover:text-[#C9A84C]"
               style={{
-                border: "1px solid rgba(255,255,255,0.2)",
-                color: "#fff",
+                border: "1px solid rgba(15,23,42,0.20)",
+                color: "#0F172A",
               }}
             >
               Upcoming Events <ChevronRight size={16} />
