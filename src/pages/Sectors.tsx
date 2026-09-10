@@ -83,7 +83,7 @@ export default function Sectors() {
             {sectors.map(({ id, name, image, desc, subsectors, highlights }) => (
               <div key={id}
                 className="group rounded-sm overflow-hidden card-hover"
-                style={{ background: '#F8FAFC', border: '1px solid rgba(15,23,42,0.10)' }}>
+                style={{ background: '#FAF5FF', border: '1px solid rgba(15,23,42,0.10)' }}>
                 <div className="relative h-52 overflow-hidden">
                   <img src={image} alt={name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -92,17 +92,17 @@ export default function Sectors() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-slate-600 text-sm leading-relaxed mb-5">{desc}</p>
+                  <p className="text-[#6B5B75] text-sm leading-relaxed mb-5">{desc}</p>
 
                   <div className="mb-5">
-                    <div className="text-xs font-medium tracking-wider uppercase mb-3" style={{ color: '#C9A84C' }}>
+                    <div className="text-xs font-medium tracking-wider uppercase mb-3" style={{ color: '#9442C8' }}>
                       Sub-sectors
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {subsectors.map((s) => (
                         <span key={s}
                           className="px-3 py-1 rounded-sm text-xs font-medium"
-                          style={{ background: 'rgba(201,168,76,0.1)', border: '1px solid rgba(201,168,76,0.2)', color: '#C9A84C' }}>
+                          style={{ background: 'rgba(148,66,200,0.1)', border: '1px solid rgba(148,66,200,0.2)', color: '#9442C8' }}>
                           {s}
                         </span>
                       ))}
@@ -110,11 +110,11 @@ export default function Sectors() {
                   </div>
 
                   <div>
-                    <div className="text-slate-500 text-xs font-medium tracking-wider uppercase mb-3">Key Offerings</div>
+                    <div className="text-[#7C6A86] text-xs font-medium tracking-wider uppercase mb-3">Key Offerings</div>
                     <ul className="space-y-1.5">
                       {highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2 text-slate-700 text-sm">
-                          <span className="shrink-0 mt-px" style={{ color: '#C9A84C' }}>›</span>
+                        <li key={h} className="flex items-start gap-2 text-[#5B4A66] text-sm">
+                          <span className="shrink-0 mt-px" style={{ color: '#9442C8' }}>›</span>
                           {h}
                         </li>
                       ))}

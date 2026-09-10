@@ -93,7 +93,7 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg,rgba(10,22,40,0.96) 0%,rgba(10,22,40,0.84) 55%,rgba(10,22,40,0.38) 100%)",
+              "linear-gradient(90deg,rgba(20,12,30,0.76) 0%,rgba(20,12,30,0.52) 55%,rgba(20,12,30,0.10) 100%)",
           }}
         />
         {/* Gold accent line */}
@@ -101,7 +101,7 @@ export default function Home() {
           className="absolute left-0 top-0 bottom-0 w-1"
           style={{
             background:
-              "linear-gradient(to bottom, transparent, #C9A84C, transparent)",
+              "linear-gradient(to bottom, transparent, #9442C8, transparent)",
           }}
         />
 
@@ -109,15 +109,15 @@ export default function Home() {
           <div className="max-w-3xl">
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-8 animate-fadeInUp rounded-sm"
-              style={{ border: "1px solid rgba(201,168,76,0.4)" }}
+              style={{ border: "1px solid rgba(148,66,200,0.4)" }}
             >
               <span
                 className="w-1.5 h-1.5 rounded-full animate-pulse-gold"
-                style={{ background: "#C9A84C" }}
+                style={{ background: "#9442C8" }}
               />
               <span
                 className="text-xs font-medium tracking-widest uppercase"
-                style={{ color: "#C9A84C" }}
+                style={{ color: "#9442C8" }}
               >
                 RC: 3432957 · Incorporated 2023
               </span>
@@ -139,13 +139,13 @@ export default function Home() {
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 px-7 py-3.5 font-semibold text-sm rounded-sm transition-colors"
-                style={{ background: "#C9A84C", color: "#0F172A" }}
+                style={{ background: "#9442C8", color: "#FFFFFF" }}
               >
                 Discover A4IR <ArrowRight size={16} />
               </Link>
               <Link
                 to="/projects"
-                className="inline-flex items-center gap-2 px-7 py-3.5 font-semibold text-sm rounded-sm transition-colors hover:text-[#C9A84C]"
+                className="inline-flex items-center gap-2 px-7 py-3.5 font-semibold text-sm rounded-sm transition-colors hover:text-[#9442C8]"
                 style={{
                   border: "1px solid rgba(255,255,255,0.2)",
                   color: "#fff",
@@ -166,7 +166,7 @@ export default function Home() {
           <div
             className="w-px h-12"
             style={{
-              background: "linear-gradient(to bottom, #C9A84C, transparent)",
+              background: "linear-gradient(to bottom, #9442C8, transparent)",
             }}
           />
         </div>
@@ -175,8 +175,8 @@ export default function Home() {
       {/* ── Stats ── */}
       <section
         style={{
-          background: "#F8FAFC",
-          borderTop: "1px solid rgba(201,168,76,0.15)",
+          background: "#FAF5FF",
+          borderTop: "1px solid rgba(148,66,200,0.15)",
         }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14 grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="font-display text-4xl lg:text-5xl font-bold text-gold-gradient mb-1">
                 {value}
               </div>
-              <div className="text-slate-600 text-sm tracking-wider uppercase">
+              <div className="text-[#6B5B75] text-sm tracking-wider uppercase">
                 {label}
               </div>
             </div>
@@ -199,10 +199,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-6">
-                <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
+                <div className="w-8 h-px" style={{ background: "#9442C8" }} />
                 <span
                   className="text-xs font-medium tracking-widest uppercase"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#9442C8" }}
                 >
                   Who We Are
                 </span>
@@ -210,13 +210,13 @@ export default function Home() {
               <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Africa's 4IR Catalyst
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+              <p className="text-[#6B5B75] text-lg leading-relaxed mb-6">
                 A4IR is a registered Nigerian company (RC: 3432957) dedicated to
                 championing the African 4th Industrial Revolution. Since 2021,
                 we have been building bridges between communities, governments,
                 and industries through technology-driven solutions.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-8">
+              <p className="text-[#6B5B75] leading-relaxed mb-8">
                 We operate across eight critical sectors — from Agriculture and
                 Health to Security and Governance — delivering training,
                 research, and consultancy that positions Africa at the forefront
@@ -225,7 +225,7 @@ export default function Home() {
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 font-semibold text-sm transition-all hover:gap-4"
-                style={{ color: "#C9A84C" }}
+                style={{ color: "#9442C8" }}
               >
                 Learn More About Us <ArrowRight size={16} />
               </Link>
@@ -239,7 +239,7 @@ export default function Home() {
               />
               <div
                 className="absolute -bottom-6 -left-6 p-6 rounded-sm shadow-2xl"
-                style={{ background: "#C9A84C" }}
+                style={{ background: "#9442C8" }}
               >
                 <div
                   className="font-display text-4xl font-bold"
@@ -256,7 +256,7 @@ export default function Home() {
               </div>
               <div
                 className="absolute -top-4 -right-4 w-24 h-24 rounded-sm"
-                style={{ border: "1px solid rgba(201,168,76,0.3)" }}
+                style={{ border: "1px solid rgba(148,66,200,0.3)" }}
               />
             </div>
           </div>
@@ -271,19 +271,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
-              <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
+              <div className="w-8 h-px" style={{ background: "#9442C8" }} />
               <span
                 className="text-xs font-medium tracking-widest uppercase"
-                style={{ color: "#C9A84C" }}
+                style={{ color: "#9442C8" }}
               >
                 What We Offer
               </span>
-              <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
+              <div className="w-8 h-px" style={{ background: "#9442C8" }} />
             </div>
-            <h2 className="font-display text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="font-display text-4xl font-bold text-[#2D2438] mb-4">
               Our Core Services
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
+            <p className="text-[#6B5B75] max-w-2xl mx-auto">
               Three pillars of transformation — equipping Africa's people,
               institutions, and industries for the 4th Industrial Revolution.
             </p>
@@ -300,16 +300,16 @@ export default function Home() {
                 }}
               >
                 <div className="text-4xl mb-6">{icon}</div>
-                <h3 className="font-display text-xl font-bold text-slate-900 mb-3 group-hover:text-[#C9A84C] transition-colors">
+                <h3 className="font-display text-xl font-bold text-[#2D2438] mb-3 group-hover:text-[#9442C8] transition-colors">
                   {title}
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                <p className="text-[#6B5B75] text-sm leading-relaxed mb-6">
                   {desc}
                 </p>
                 <Link
                   to="/services"
                   className="inline-flex items-center gap-2 text-sm font-medium transition-all hover:gap-4"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#9442C8" }}
                 >
                   Explore <ArrowRight size={14} />
                 </Link>
@@ -325,22 +325,22 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
-                <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
+                <div className="w-8 h-px" style={{ background: "#9442C8" }} />
                 <span
                   className="text-xs font-medium tracking-widest uppercase"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#9442C8" }}
                 >
                   Coverage
                 </span>
               </div>
-              <h2 className="font-display text-4xl font-bold text-slate-900">
+              <h2 className="font-display text-4xl font-bold text-[#2D2438]">
                 Eight Sectors
               </h2>
             </div>
             <Link
               to="/sectors"
               className="inline-flex items-center gap-2 font-semibold text-sm transition-all hover:gap-4"
-              style={{ color: "#C9A84C" }}
+              style={{ color: "#9442C8" }}
             >
               View All Sectors <ArrowRight size={16} />
             </Link>
@@ -353,20 +353,20 @@ export default function Home() {
                 key={label}
                 className="p-6 rounded-sm card-hover group"
                 style={{
-                  background: "#F8FAFC",
+                  background: "#FAF5FF",
                   border: "1px solid rgba(15,23,42,0.10)",
                 }}
               >
                 <div
                   className="w-10 h-10 rounded-sm flex items-center justify-center mb-4 transition-colors"
-                  style={{ background: "rgba(201,168,76,0.1)" }}
+                  style={{ background: "rgba(148,66,200,0.1)" }}
                 >
-                  <Icon size={20} style={{ color: "#C9A84C" }} />
+                  <Icon size={20} style={{ color: "#9442C8" }} />
                 </div>
-                <h3 className="text-slate-900 font-semibold mb-1 group-hover:text-[#C9A84C] transition-colors">
+                <h3 className="text-[#2D2438] font-semibold mb-1 group-hover:text-[#9442C8] transition-colors">
                   A4IR {label}
                 </h3>
-                <p className="text-slate-500 text-xs leading-relaxed">{desc}</p>
+                <p className="text-[#7C6A86] text-xs leading-relaxed">{desc}</p>
               </Link>
             ))}
           </div>
@@ -382,22 +382,22 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
-                <div className="w-8 h-px" style={{ background: "#C9A84C" }} />
+                <div className="w-8 h-px" style={{ background: "#9442C8" }} />
                 <span
                   className="text-xs font-medium tracking-widest uppercase"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#9442C8" }}
                 >
                   Flagship Initiatives
                 </span>
               </div>
-              <h2 className="font-display text-4xl font-bold text-slate-900">
+              <h2 className="font-display text-4xl font-bold text-[#2D2438]">
                 Our Projects
               </h2>
             </div>
             <Link
               to="/projects"
               className="inline-flex items-center gap-2 font-semibold text-sm transition-all hover:gap-4"
-              style={{ color: "#C9A84C" }}
+              style={{ color: "#9442C8" }}
             >
               All Projects <ArrowRight size={16} />
             </Link>
@@ -421,16 +421,16 @@ export default function Home() {
                   />
                   <div
                     className="absolute top-4 left-4 font-display text-5xl font-bold"
-                    style={{ color: "rgba(201,168,76,0.18)" }}
+                    style={{ color: "rgba(148,66,200,0.18)" }}
                   >
                     {num}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-lg font-bold text-slate-900 mb-3 group-hover:text-[#C9A84C] transition-colors">
+                  <h3 className="font-display text-lg font-bold text-[#2D2438] mb-3 group-hover:text-[#9442C8] transition-colors">
                     {title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                  <p className="text-[#6B5B75] text-sm leading-relaxed">
                     {desc}
                   </p>
                 </div>
@@ -451,13 +451,13 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(10,22,40,0.90)" }}
+          style={{ background: "rgba(20,12,30,0.72)" }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(201,168,76,0.08), transparent)",
+              "linear-gradient(90deg, rgba(148,66,200,0.08), transparent)",
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
@@ -474,13 +474,13 @@ export default function Home() {
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 font-bold rounded-sm transition-colors"
-              style={{ background: "#C9A84C", color: "#0F172A" }}
+              style={{ background: "#9442C8", color: "#FFFFFF" }}
             >
               Contact Us <ArrowRight size={16} />
             </Link>
             <Link
               to="/events"
-              className="inline-flex items-center gap-2 px-8 py-4 font-semibold rounded-sm transition-colors hover:text-[#C9A84C]"
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold rounded-sm transition-colors hover:text-[#9442C8]"
               style={{
                 border: "1px solid rgba(255,255,255,0.2)",
                 color: "#fff",

@@ -71,26 +71,26 @@ export default function Services() {
               <div className={i % 2 !== 0 ? 'lg:order-2' : ''}>
                 <div className="inline-flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-sm flex items-center justify-center"
-                    style={{ background: 'rgba(201,168,76,0.1)' }}>
-                    <Icon size={20} style={{ color: '#C9A84C' }} />
+                    style={{ background: 'rgba(148,66,200,0.1)' }}>
+                    <Icon size={20} style={{ color: '#9442C8' }} />
                   </div>
-                  <span className="text-xs font-medium tracking-widest uppercase" style={{ color: '#C9A84C' }}>{title}</span>
+                  <span className="text-xs font-medium tracking-widest uppercase" style={{ color: '#9442C8' }}>{title}</span>
                 </div>
-                <h2 className="font-display text-4xl font-bold text-slate-900 mb-3">{tagline}</h2>
-                <p className="text-slate-600 leading-relaxed mb-8">{desc}</p>
+                <h2 className="font-display text-4xl font-bold text-[#2D2438] mb-3">{tagline}</h2>
+                <p className="text-[#6B5B75] leading-relaxed mb-8">{desc}</p>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">
                   {offerings.map((o) => (
                     <div key={o} className="flex items-start gap-2">
-                      <span className="shrink-0" style={{ color: '#C9A84C' }}>›</span>
-                      <span className="text-slate-700 text-sm">{o}</span>
+                      <span className="shrink-0" style={{ color: '#9442C8' }}>›</span>
+                      <span className="text-[#5B4A66] text-sm">{o}</span>
                     </div>
                   ))}
                 </div>
 
                 <Link to="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm rounded-sm transition-colors"
-                  style={{ background: '#C9A84C', color: '#0F172A' }}>
+                  style={{ background: '#9442C8', color: '#FFFFFF' }}>
                   Enquire Now <ArrowRight size={16} />
                 </Link>
               </div>
@@ -98,7 +98,7 @@ export default function Services() {
               <div className={`relative ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
                 <img src={image} alt={title} className="rounded-sm object-cover w-full h-[420px]" />
                 <div className="absolute bottom-6 left-6 px-4 py-2 rounded-sm"
-                  style={{ background: '#C9A84C' }}>
+                  style={{ background: '#9442C8' }}>
                   <span className="font-bold text-sm" style={{ color: '#FFFFFF' }}>{title}</span>
                 </div>
               </div>
@@ -109,13 +109,13 @@ export default function Services() {
 
       <section className="py-20 section-divider" style={{ background: '#FFFFFF' }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-4xl font-bold text-slate-900 mb-6">Which Service is Right for You?</h2>
-          <p className="text-slate-600 mb-8">
+          <h2 className="font-display text-4xl font-bold text-[#2D2438] mb-6">Which Service is Right for You?</h2>
+          <p className="text-[#6B5B75] mb-8">
             Let us have a conversation about your goals and how A4IR can help you achieve them.
           </p>
           <Link to="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 font-bold rounded-sm transition-colors"
-            style={{ background: '#C9A84C', color: '#0F172A' }}>
+            style={{ background: '#9442C8', color: '#FFFFFF' }}>
             Contact Our Team <ArrowRight size={16} />
           </Link>
         </div>

@@ -29,7 +29,7 @@ export default function Navbar() {
         background: 'rgba(255,255,255,0.88)',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
-        borderBottom: '1px solid rgba(201,168,76,0.25)',
+        borderBottom: '1px solid rgba(148,66,200,0.25)',
         boxShadow: '0 8px 32px rgba(15,23,42,0.12)',
       } : {}}
     >
@@ -40,13 +40,13 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3 group">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300"
-              style={{ border: '2px solid #C9A84C', background: '#F8FAFC' }}
+              style={{ border: '2px solid #9442C8', background: '#FAF5FF' }}
             >
-              <span className="text-[10px] font-bold" style={{ color: '#C9A84C' }}>A4IR</span>
+              <span className="text-[10px] font-bold" style={{ color: '#9442C8' }}>A4IR</span>
             </div>
             <div>
-              <div className="font-display text-slate-900 font-bold text-lg leading-tight">A4IR</div>
-              <div className="text-[10px] tracking-widest uppercase leading-tight" style={{ color: '#C9A84C' }}>African 4IR</div>
+              <div className="font-display text-[#2D2438] font-bold text-lg leading-tight">A4IR</div>
+              <div className="text-[10px] tracking-widest uppercase leading-tight" style={{ color: '#9442C8' }}>African 4IR</div>
             </div>
           </Link>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
                 end={to === '/'}
                 className={({ isActive }) =>
                   `px-4 py-2 text-sm font-medium transition-colors duration-200 relative group ${
-                    isActive ? 'text-[#C9A84C]' : 'text-slate-700 hover:text-slate-900'
+                    isActive ? 'text-[#9442C8]' : 'text-[#5B4A66] hover:text-[#2D2438]'
                   }`
                 }
               >
@@ -69,7 +69,7 @@ export default function Navbar() {
                     <span
                       className="absolute bottom-0 left-4 right-4 h-px transition-transform duration-200 origin-left"
                       style={{
-                        background: '#C9A84C',
+                        background: '#9442C8',
                         transform: isActive ? 'scaleX(1)' : 'scaleX(0)',
                       }}
                     />
@@ -83,16 +83,16 @@ export default function Navbar() {
           <Link
             to="/contact"
             className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 font-semibold text-sm rounded-sm transition-colors duration-200"
-            style={{ background: '#C9A84C', color: '#0F172A' }}
-            onMouseEnter={e => (e.currentTarget.style.background = '#E8C96B')}
-            onMouseLeave={e => (e.currentTarget.style.background = '#C9A84C')}
+            style={{ background: '#9442C8', color: '#FFFFFF' }}
+            onMouseEnter={e => (e.currentTarget.style.background = '#B76AE6')}
+            onMouseLeave={e => (e.currentTarget.style.background = '#9442C8')}
           >
             Get in Touch
           </Link>
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden p-2 text-slate-700 hover:text-slate-900"
+            className="lg:hidden p-2 text-[#5B4A66] hover:text-[#2D2438]"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -103,7 +103,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div style={{ background: 'rgba(255,255,255,0.96)', borderTop: '1px solid rgba(201,168,76,0.2)' }}>
+        <div style={{ background: 'rgba(255,255,255,0.96)', borderTop: '1px solid rgba(148,66,200,0.2)' }}>
           <nav className="flex flex-col px-6 py-4 gap-1">
             {navLinks.map(({ to, label }) => (
               <NavLink
@@ -113,7 +113,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
                   `px-4 py-3 text-sm font-medium border-b border-white/5 transition-colors ${
-                    isActive ? 'text-[#C9A84C]' : 'text-slate-700 hover:text-slate-900'
+                    isActive ? 'text-[#9442C8]' : 'text-[#5B4A66] hover:text-[#2D2438]'
                   }`
                 }
               >
@@ -124,7 +124,7 @@ export default function Navbar() {
               to="/contact"
               onClick={() => setOpen(false)}
               className="mt-4 text-center px-5 py-3 font-semibold text-sm rounded-sm"
-              style={{ background: '#C9A84C', color: '#0F172A' }}
+              style={{ background: '#9442C8', color: '#FFFFFF' }}
             >
               Get in Touch
             </Link>
